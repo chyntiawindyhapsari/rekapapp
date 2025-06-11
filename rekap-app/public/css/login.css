@@ -1,0 +1,46 @@
+body {
+    background-image: url('bg login.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+}
+.card {
+    margin: 20% auto; /* Gunakan persentase untuk responsivitas */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    border: none;
+    padding-top: 30px; /* untuk memberi ruang di atas untuk logo */
+    max-width: 400px; /* Batas maksimal lebar */
+    width: 100%; /* Pastikan lebar menyesuaikan layar */
+}
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* untuk memusatkan logo dan memberi jarak dengan elemen berikutnya */
+    width: 80px; /* ukuran logo bisa disesuaikan */
+    height: auto;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+}
+.card-title {
+    color: #000;
+}
+.alert {
+    margin-top: 15px;
+}
+.icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+}

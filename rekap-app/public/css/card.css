@@ -1,0 +1,9 @@
+.card {
+    border-radius: 15px; /* Rounded corners, adjust as needed */
+    margin-bottom: -60px;
+}
+
+.card-body {
+    text-align: center; /* Center the text */
+    font-family: 'Roboto', sans-serif; /* Change to Roboto or any preferred font */
+}

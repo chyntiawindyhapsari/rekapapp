@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Set custom font */
+    margin: 0;
+    display: flex;
+    min-height: 100vh; /* Pastikan seluruh layar terisi */
+    flex-direction: row; /* Letakkan navbar dan konten utama secara horisontal */
+}
+
+.navbar {
+    width: 250px;
+    height: 100vh; /* Membuat navbar full height */
+    border-right: 3px solid #e0e0e0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    position: fixed; /* Menempel di kiri */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column; /* Menyusun item navbar ke bawah */
+    padding: 10px 5px; /* Beri ruang pada navbar */
+    background-color: #fff; /* Tambahkan background agar terlihat lebih jelas */
+}
+
+.main-content {
+    margin-left: 10px; /* Memberikan ruang untuk navbar */
+    margin-right: 25px; /* Memberikan margin kanan 25px */
+    padding: 20px;
+    flex-grow: 1; /* Konten utama mengisi ruang yang tersisa */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em; /* Increase font size for the brand */
+    margin-bottom: 1rem; /* Spacing below the brand */
+    text-align: center; /* Center the brand text and logo */
+}
+
+.logo {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto;
+    margin-top: 10px; /* Small margin to separate text from logo */
+}
+
+.navbar-nav {
+    flex-grow: 1; /* Membuat navbar-nya mengisi ruang kosong */
+    display: flex;
+    flex-direction: column; /* Menyusun item navbar secara vertikal */
+    padding: 0;
+    margin: 0;
+    gap: 0px; /* Spacing antara item navbar */
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    color: #6B3F24; /* Font color */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background on hover */
+    color: #7A4B26; /* Darker font color on hover */
+}
+
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background for active link */
+    color: #7A4B26; /* Darker font color for active link */
+}
+
+.nav-item {
+    width: 100%; /* Pastikan item navbar menggunakan seluruh lebar */
+}
+
+.main-content {
+    margin-left: 250px; /* Memberikan ruang untuk navbar */
+    padding: 20px;
+    flex-grow: 1; /* Konten utama mengisi ruang yang tersisa */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: relative; /* Navbar tidak fixed untuk layar kecil */
+        width: 100%; /* Navbar memenuhi lebar layar */
+        height: auto; /* Tinggi navbar menyesuaikan konten */
+    }
+
+    .main-content {
+        margin-left: 0; /* Atur ulang margin untuk layar kecil */
+    }
+}
